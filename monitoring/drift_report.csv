@@ -1,0 +1,12 @@
+type,name,ks_stat,p_value,drift_detected,feature_drift_ratio,prediction_drift,alert_triggered
+feature,tenure,0.0,1.0,False,,,
+feature,monthly_charges,0.0,1.0,False,,,
+feature,total_charges,0.0,1.0,False,,,
+feature,avg_monthly_spend,0.0,1.0,False,,,
+feature,partner,0.0,1.0,False,,,
+feature,dependents,0.0,1.0,False,,,
+feature,phoneservice,0.0,1.0,False,,,
+feature,paperlessbilling,0.0,1.0,False,,,
+feature,senior_citizen,0.0,1.0,False,,,
+prediction,churn_probability,0.0,1.0,False,,,
+SYSTEM,OVERALL,,,,0.0,False,False
