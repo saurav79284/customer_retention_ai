@@ -14,4 +14,7 @@ def test_best_action_selected():
     )
 
     assert result["recommended_action"] == "PRIORITY_SUPPORT"
+    # EV = (uplift × value) - cost = (0.50 × 1000) - 30 = 470
+    # (No churn_probability weighting - uplift already embeds that!)
     assert result["expected_value"] == 470
+    assert "high-risk" in result["reason"].lower()

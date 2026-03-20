@@ -1,0 +1,38 @@
+# ============================================
+# Policy Evaluation Configuration
+# ============================================
+policy:
+  customer_value: 1200 # Customer lifetime value (in currency units)
+  default_churn_probability: 0.5 # Fallback when prediction unavailable
+
+# ============================================
+# UI Configuration
+# ============================================
+ui:
+  risk_thresholds:
+    high_risk: 0.6 # High risk if churn probability >= 0.6
+    medium_risk: 0.3 # Medium risk if churn probability >= 0.3
+    low_risk: 0.0 # Low risk if churn probability < 0.3
+
+# ============================================
+# Action Costs Configuration
+# ============================================
+actions:
+  DISCOUNT_10:
+    cost: 50 # Cost of providing 10% discount
+    name: "10% Discount"
+
+  PRIORITY_SUPPORT:
+    cost: 30 # Cost of priority support
+    name: "Priority Support"
+
+  LOYALTY_OFFER:
+    cost: 20 # Cost of loyalty offer
+    name: "Loyalty Offer"
+
+# ============================================
+# Model Configuration
+# ============================================
+models:
+  churn_model_path: "models/artifacts/churn_model.pkl"
+  propensity_model_path: "models/propensity_model.pkl"
